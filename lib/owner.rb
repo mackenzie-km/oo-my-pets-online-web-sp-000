@@ -69,7 +69,8 @@ class Owner
   
   def sell_pets
             binding.pry
-    @pets.[1...@pets.length].collect do |object|
+    length = @pets.count
+    @pets.[1...length].collect do |object|
           object.mood = "nervous"
       end
     @pets = {:fishes => [], :dogs => [], :cats => []}
