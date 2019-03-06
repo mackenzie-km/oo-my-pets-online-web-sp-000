@@ -73,7 +73,6 @@ class Owner
         pet[0].mood = "nervous"
         i += 1
       end
-    end 
         #binding.pry
     @pets = {:fishes => [], :dogs => [], :cats => []}
   end 
