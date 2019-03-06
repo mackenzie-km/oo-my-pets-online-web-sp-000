@@ -29,7 +29,8 @@ class Owner
 
   
   def buy_fish(fish_name) 
-  #binding.pry 
+  #binding.pry
+  fish_name = Fish.new("#{fish_name}")
     if fish_name.is_a?(Fish) == true
       @pets[:fishes] << fish_name
     end
