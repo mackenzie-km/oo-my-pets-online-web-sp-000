@@ -70,8 +70,7 @@ class Owner
   def sell_pets
     binding.pry
     @pets.collect do |species|
-      species do |pet|
-        pet.mood = "nervous"
+species 
       end 
     end 
     @pets = {:fishes => [], :dogs => [], :cats => []}
