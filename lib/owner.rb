@@ -70,9 +70,11 @@ class Owner
   def sell_pets
 
     answer = []
-    @pets.collect do |pet|
+    @pets.collect do |pet_array|
+      pet_array.collect do |pet|
         pet.mood = "happy"
       end
+    end 
         binding.pry
     @pets = {:fishes => [], :dogs => [], :cats => []}
   end 
