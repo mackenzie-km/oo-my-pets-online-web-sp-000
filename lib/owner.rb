@@ -67,4 +67,7 @@ class Owner
     end 
   end 
   
+  def sell_oets
+  end 
+  
 end
