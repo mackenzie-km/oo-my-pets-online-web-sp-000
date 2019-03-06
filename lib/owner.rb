@@ -36,11 +36,17 @@ class Owner
   end 
   
     def buy_cat(cat_name) 
-  fish_name = Fish.new("#{fish_name}")
-    if fish_name.is_a?(Fish) == true
-      @pets[:fishes] << fish_name
+  cat_name = Cat.new("#{cat_name}")
+    if cat_name.is_a?(Cat) == true
+      @pets[:cats] << cat_name
     end
   end 
     
+      def buy_dog(cat_name) 
+  cat_name = Cat.new("#{cat_name}")
+    if cat_name.is_a?(Cat) == true
+      @pets[:cats] << cat_name
+    end
+  end 
   
 end
