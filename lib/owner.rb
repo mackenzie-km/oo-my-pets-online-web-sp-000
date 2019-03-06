@@ -69,10 +69,7 @@ class Owner
   
   def sell_pets
     @pets.collect do |species, objects|
-      objects.collect do |object|
-          object.mood = "nervous"
-      end
-    end
+      objects.collect {|object| object.mood = "nervous"} }
     @pets = {:fishes => [], :dogs => [], :cats => []}
   end 
   
