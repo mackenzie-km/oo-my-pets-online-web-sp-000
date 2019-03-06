@@ -71,7 +71,7 @@ class Owner
             binding.pry
     @pets.collect do |pet_array|
         pet_array.collect do |object|
-          object.mood = "nervous"
+          object[1...object.length].mood = "nervous"
       end
     end
     @pets = {:fishes => [], :dogs => [], :cats => []}
