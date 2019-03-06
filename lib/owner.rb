@@ -71,10 +71,12 @@ class Owner
 
     answer = []
     @pets.collect do |species|
-      species.collect do |pet|
+      species.collect do |pet_list|
+        pet_list.collect do |pet|
         pet.mood = "happy"
       end
     end
+  end 
         binding.pry
     @pets = {:fishes => [], :dogs => [], :cats => []}
   end 
