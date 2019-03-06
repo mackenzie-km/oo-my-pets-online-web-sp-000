@@ -69,9 +69,7 @@ class Owner
   
   def sell_pets
     @pets.collect do |pet_array|
-        i = 0 
-        pet_array[0].mood = "nervous"
-        i += 1
+        @pets[pet_array].mood = "nervous"
       end
         #binding.pry
     @pets = {:fishes => [], :dogs => [], :cats => []}
