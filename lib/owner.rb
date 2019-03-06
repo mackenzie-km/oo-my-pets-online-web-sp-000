@@ -42,10 +42,10 @@ class Owner
     end
   end 
     
-      def buy_dog(cat_name) 
-  cat_name = Cat.new("#{cat_name}")
-    if cat_name.is_a?(Cat) == true
-      @pets[:cats] << cat_name
+      def buy_dog(dog_name) 
+  dog_name = Dog.new("#{dog_name}")
+    if dog_name.is_a?(Dog) == true
+      @pets[:dogs] << dog_name
     end
   end 
   
