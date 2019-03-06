@@ -70,8 +70,8 @@ class Owner
   def sell_pets
 
     answer = []
-    @pets.collect do |pet_array|
-      pet_array.collect do |pet|
+    @pets.each do |pet_array|
+      pet_array.each do |pet|
         @mood = "happy"
       end
     end 
