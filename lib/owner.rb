@@ -68,12 +68,14 @@ class Owner
   end 
   
   def sell_pets
-    binding.pry
+
     answer = []
     @pets.collect do |item|
       item.collect do |smaller_item|
 answer << smaller_item
       end
+    end
+        binding.pry
     @pets = {:fishes => [], :dogs => [], :cats => []}
   end 
   
