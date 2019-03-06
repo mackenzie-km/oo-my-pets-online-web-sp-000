@@ -70,8 +70,7 @@ class Owner
   def sell_pets
             binding.pry
     length = @pets.count
-    @pets[0].collect do |inside_hash|
-      inside_hash[1...length].collect do |object|
+    @pets[0].collect do |species, objects|
           object.mood = "nervous"
       end
     @pets = {:fishes => [], :dogs => [], :cats => []}
