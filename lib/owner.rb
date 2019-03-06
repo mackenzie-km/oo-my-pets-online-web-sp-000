@@ -70,9 +70,9 @@ class Owner
   def sell_pets
 
     answer = []
-    @pets.collect do |item|
-      item.collect do |smaller_item|
-answer << smaller_item
+    @pets.collect do |species|
+      species.collect do |pet|
+        pet.mood = "happy"
       end
     end
         binding.pry
