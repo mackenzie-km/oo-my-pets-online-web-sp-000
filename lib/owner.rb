@@ -75,7 +75,7 @@ class Owner
         @mood = "happy"
       end
     end 
-        binding.pry
+        #binding.pry
     @pets = {:fishes => [], :dogs => [], :cats => []}
   end 
   
