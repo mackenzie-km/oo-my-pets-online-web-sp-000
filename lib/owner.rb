@@ -73,8 +73,6 @@ class Owner
     @pets.collect do |pet|
         pet.mood = "happy"
       end
-    end
-  end 
         binding.pry
     @pets = {:fishes => [], :dogs => [], :cats => []}
   end 
