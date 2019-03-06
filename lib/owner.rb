@@ -72,7 +72,7 @@ class Owner
     answer = []
     @pets.collect do |pet_array|
       pet_array.collect do |pet|
-        pet.mood = "happy"
+        @mood = "happy"
       end
     end 
         binding.pry
