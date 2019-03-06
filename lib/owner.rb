@@ -71,8 +71,7 @@ class Owner
     binding.pry
     @pets.collect do |species|
 species 
-      end 
-    end 
+      end
     @pets = {:fishes => [], :dogs => [], :cats => []}
   end 
   
