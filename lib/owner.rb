@@ -71,8 +71,9 @@ class Owner
             binding.pry
     @pets.collect do |species, objects|
       objects.collect do |object|
-          objects.mood = "nervous"
+          object.mood = "nervous"
       end
+    end
     @pets = {:fishes => [], :dogs => [], :cats => []}
   end 
   
